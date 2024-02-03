@@ -78,13 +78,10 @@ header li {
 
 header ul li a {
   text-decoration: none;
-  color: var(--dark-blue);
+  color: var(--grayish-blue);
   transform: 0.4s;
 }
 
-header ul li a:hover{
-  color: orange;
-}
 
 #header-btn {
   display: none;
@@ -204,6 +201,7 @@ header ul li a:hover{
 }
 
 .articles .container {
+  background-color: rgb(251, 249, 249);
   display: flex;
   flex-direction: column;
   margin-top: 0px;
@@ -245,6 +243,8 @@ header ul li a:hover{
   color: var(--dark-blue);
   padding: 0 30px 0 20px;
 }
+
+
 
 .articles .pictureCard .para {
   padding: 0 30px 50px 20px;
@@ -318,11 +318,15 @@ footer p {
   }
 
   header li {
-    margin: 0% 2%;
+    margin: 0% 5%;
     font-size: 135%;
     display: inline;
   }
-
+  header ul li a:hover{
+    color: var(--dark-blue);
+    padding-bottom: 20px;
+    border-bottom: 5px solid #45f34d; /* Adjust the color and thickness as needed */
+  }
   #header-btn {
     display: block;
     padding: 10px 50px;
@@ -410,8 +414,6 @@ footer p {
     height: auto;
   }
   .reasons .container1 .card .img1 {
-    width: 30%;
-    height: 30%;
     margin-left: -2%;
   }
   .reasons .container1 h3 {
@@ -459,6 +461,11 @@ footer p {
   .articles .container .pictureCard h3 {
     font-size: 160%;
     margin-left: -1%;
+    cursor: pointer;
+  }
+
+  .articles .container .pictureCard h3:hover{
+   color: #2fd889;
   }
 
   .articles .container .pictureCard .para {
@@ -468,7 +475,7 @@ footer p {
   }
 
   footer {
-    padding-bottom: 1%;
+    padding-bottom: 3%;
   }
   footer .log {
     padding-top: 3%;
@@ -483,6 +490,10 @@ footer p {
   footer .img3 {
     width: 7%;
     height: 8%;
+  }
+
+  footer .img3:hover{
+   filter:invert(26%) sepia(14%) saturate(2540%) hue-rotate(67deg) brightness(100%) contrast(80%);
   }
 
   footer .information {
@@ -512,8 +523,12 @@ footer p {
   footer .information .divs {
     font-size: 110%;
     margin-bottom: 3%;
+    cursor: pointer;
   }
 
+  footer .information .divs:hover{
+    color:var(--lime-green);
+  }
   .part-3 button {
     padding: 20px 45px;
     border-radius: 50px;
