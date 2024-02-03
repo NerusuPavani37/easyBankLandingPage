@@ -325,11 +325,11 @@ footer p {
   header ul li a:hover{
     color: var(--dark-blue);
     padding-bottom: 20px;
-    border-bottom: 5px solid #45f34d; /* Adjust the color and thickness as needed */
+    border-bottom: 5px solid #45f34d; 
   }
   #header-btn {
     display: block;
-    padding: 10px 50px;
+    padding: 10px 30px;
     border: none;
     border-radius: 50px;
     font-size: 95%;
@@ -479,16 +479,16 @@ footer p {
   }
   footer .log {
     padding-top: 3%;
-    padding-right: 70%;
-    padding-bottom: 2%;
+    margin-left: 10%;
+    width: 10%;
+    display: flex;
   }
   footer .icons {
-    position: relative;
-    padding-right: 60%;
-    padding-top: 1%;
+    width: 34%;
+    padding-top: 5%;
   }
   footer .img3 {
-    width: 7%;
+    width: 6%;
     height: 8%;
   }
 
@@ -507,7 +507,6 @@ footer p {
   .part-2,
   .part-3 {
     flex: 1;
-    margin-top: 2%;
     margin-right: 10px;
     display: flex;
     flex-direction: column;
@@ -521,14 +520,23 @@ footer p {
   }
 
   footer .information .divs {
-    font-size: 110%;
+    font-size: 120%;
     margin-bottom: 3%;
     cursor: pointer;
   }
 
-  footer .information .divs:hover{
-    color:var(--lime-green);
+  .part-1 div{
+    cursor: pointer;
   }
+.part-1 div:hover,
+.part-2 div:hover{
+  color: red;
+}
+
+.part-3{
+  display: flex;
+  flex-direction: column;
+}
   .part-3 button {
     padding: 20px 45px;
     border-radius: 50px;
@@ -537,8 +545,9 @@ footer p {
     position: absolute;
   }
   .part-3 p {
-    margin-top: 6%;
-    font-size: 90%;
+    margin-top: 5%;
+    font-size: 1rem;
+    margin-left: -2%;
     position: absolute;
   }
 }
